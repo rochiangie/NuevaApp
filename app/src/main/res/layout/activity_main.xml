@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para ingresar el contenido de la nota -->
+    <EditText
+        android:id="@+id/etNoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe una nota"
+        android:inputType="text" />
+
+    <!-- Botón para agregar una nota -->
+    <Button
+        android:id="@+id/btnAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Nota" />
+
+    <!-- Botón para obtener un chiste -->
+    <Button
+        android:id="@+id/btnJoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obtener Chiste" />
+
+    <!-- Botón para ver el clima -->
+    <Button
+        android:id="@+id/btnWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Clima" />
+
+    <!-- Botón para abrir la cámara -->
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir Cámara" />
+
+    <!-- Botón para abrir Google Photos -->
+    <Button
+        android:id="@+id/btnPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Fotos" />
+
+    <!-- RecyclerView para mostrar las notas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
